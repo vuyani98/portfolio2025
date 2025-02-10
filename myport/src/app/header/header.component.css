@@ -1,0 +1,32 @@
+nav {
+   width: 90%;
+   margin-inline: auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-inline: 20px;
+   box-shadow: 0px 0px 10px 1px #0000001a;
+   border-radius: 15px;
+}
+
+#logo{
+  font-family: 'Qwigley';
+  font-size: 35px;
+}
+
+
+ul{
+  display: flex;
+  list-style: none;
+}
+
+li{
+  margin-inline: 20px;
+}
+
+a:any-link{
+  color: black;
+  text-decoration: none;
+  font-family: 'Archivo';
+  font-weight: bold;
+}

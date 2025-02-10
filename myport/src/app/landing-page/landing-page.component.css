@@ -1,0 +1,137 @@
+#my-hero{
+  display: flex;
+  justify-content: center;
+  margin-block: 50px;
+}
+
+#hero-text{
+ width: 40%;
+ margin-inline: 30px;
+}
+
+#hero-text p {
+  font-size: 14px;
+  line-height: 23px;
+}
+
+#hero-text-header{
+  font-family: 'Archivo';
+}
+
+#hero-image {
+  height: 75vh;
+}
+
+#skwiggle-border{
+  background-image: url('../../assets/images/borderish.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: fit-content;
+  padding: 10px;
+  margin-block: 15px;
+}
+
+button{
+  border: none;
+  background: none;
+  padding: 10px;
+  font-family: 'Archivo';
+  font-size: 16px;
+  color: #1B8EDB;
+  font-weight: bold;
+}
+
+button:hover{
+  padding: 7px;
+}
+
+
+#projects {
+  margin-block: 50px;
+  width: 80%;
+  margin-inline: auto;
+  padding-block: 30px;
+  overflow: clip;
+}
+
+#projects-outer{
+  margin-block: 50px;
+  -webkit-mask: linear-gradient(90deg, transparent, white 10%, white 90%, transparent);
+  mask: linear-gradient(90deg, transparent, white 10%, white 90%, transparent);
+}
+
+#projects h2{
+  text-align: center;
+  margin-block: 30px;
+}
+
+.projects-inner{
+  display: flex;
+  width: fit-content;
+  flex-wrap: nowrap;
+  animation: scroll 20s linear infinite;
+}
+
+.projects-inner:hover{
+  animation-play-state: paused;
+}
+
+.project{
+  margin-inline: 70px;
+  width: fit-content;
+}
+.project-image{
+  height: 200px;
+}
+
+.project-details{
+  margin-top: 20px;
+  text-align: center;
+}
+
+h4{
+  margin: 0px !important;
+  margin-right: 10px !important;
+}
+
+.project-btn a{
+  display: flex;
+  align-items: center;
+  padding-inline: 10px;
+}
+
+.project-btn button{
+  margin-block: 25px;
+  border-radius: 15px;
+  border:  1px solid black;
+}
+
+a:any-link{
+  color: black;
+  text-decoration: none;
+  font-family: 'Archivo';
+  font-weight: bold;
+}
+
+
+@keyframes scroll{
+
+  to{
+    transform: translateX(-50%);
+  }
+}
+
+
+#skillset{
+  background-color: #1E1E1E;
+  margin-block: 50px;
+  color: white;
+  padding-block: 50px;
+  padding-inline: 30px;
+}
+
+#skills-head, .skill {
+  display: flex;
+  justify-content: space-evenly;
+}
