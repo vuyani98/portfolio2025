@@ -127,11 +127,60 @@ a:any-link{
   background-color: #1E1E1E;
   margin-block: 50px;
   color: white;
-  padding-block: 50px;
+  padding-block: 100px;
   padding-inline: 30px;
 }
+#skillset-outer{
+  width: 70%;
+  margin-inline: auto;
+}
 
-#skills-head, .skill {
+.skills-head, .skill {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+}
+
+.skill{
+  margin-block: 15px;
+}
+
+.skills-head{
+  margin-block: 50px;
+}
+
+.example-section{
+  width: 250px;
+  background-color: #D9D9D9;
+  height: 30px;
+  border-radius: 15px;
+  padding-inline: 10px;
+}
+
+.left{
+  text-align: start;
+}
+
+#experience {
+  margin-block: 100px;
+}
+
+#experience h2{
+  text-align: center;
+}
+
+#experience-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  margin-block: 50px;
+}
+
+.experience-card{
+  font-size: 12px;
+  margin-inline: 20px;
+}
+
+.details .title{
+  font-weight: bold;
+  margin-right: 15px;
 }

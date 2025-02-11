@@ -7,3 +7,22 @@ body{
 h1, h2, h3, h4, h5, h6{
   font-family: 'Archivo';
 }
+
+.mdc-slider__thumb-knob{
+  border-radius: 50% !important;
+  height: 15px !important;
+}
+
+.mdc-slider__thumb{
+  height: 15px !important;
+}
+
+.mat-mdc-slider.mdc-slider--disabled{
+  opacity: 1 !important;
+  color: #1B8EDB !important;
+}
+
+mat-slider{
+  width: 100% !important;
+  height: 50% !important;
+}
