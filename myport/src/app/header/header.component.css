@@ -1,32 +1,146 @@
 nav {
-   width: 90%;
-   margin-inline: auto;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding-inline: 20px;
-   box-shadow: 0px 0px 10px 1px #0000001a;
-   border-radius: 15px;
+  width: 90%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 20px;
+  padding-block: 10px;
+  box-shadow: 0px 0px 10px 1px #0000001a;
+  border-radius: 15px;
+  position: relative;
 }
 
 #logo{
-  font-family: 'Qwigley';
-  font-size: 35px;
+ font-family: 'Qwigley';
+ font-size: 35px;
 }
 
-
 ul{
-  display: flex;
-  list-style: none;
+ display: flex;
+ list-style: none;
+ padding: 0;
+ margin: 0;
 }
 
 li{
-  margin-inline: 20px;
+ margin-inline: 20px;
 }
 
 a:any-link{
-  color: black;
-  text-decoration: none;
-  font-family: 'Archivo';
-  font-weight: bold;
+ color: black;
+ text-decoration: none;
+ font-family: 'Archivo';
+ font-weight: bold;
+}
+
+/* Hamburger menu icon - hidden by default */
+.hamburger {
+ display: none;
+ flex-direction: column;
+ justify-content: space-between;
+ width: 30px;
+ height: 21px;
+ cursor: pointer;
+ z-index: 10;
+}
+
+.hamburger span {
+ display: block;
+ height: 3px;
+ width: 100%;
+ background-color: black;
+ border-radius: 3px;
+ transition: all 0.3s ease;
+}
+
+#mobile-nav{
+  display: none;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+ nav {
+   padding: 15px 20px;
+ }
+
+ .hamburger {
+   display: flex;
+ }
+
+ #links, #social-media {
+   display: none;
+ }
+
+ /* When menu is open */
+ .menu-open #mobile-nav {
+   display: block;
+ }
+
+ /* Hamburger animation */
+ .menu-open .hamburger span:nth-child(1) {
+   transform: translateY(9px) rotate(45deg);
+ }
+
+ .menu-open .hamburger span:nth-child(2) {
+   opacity: 0;
+ }
+
+ .menu-open .hamburger span:nth-child(3) {
+   transform: translateY(-9px) rotate(-45deg);
+ }
+
+ /* Mobile navigation */
+ #mobile-nav {
+   display: none;
+   position: absolute;
+   top: 100%;
+   left: 0;
+   width: 100%;
+   background-color: white;
+   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+   border-radius: 0 0 15px 15px;
+   padding: 20px 0;
+   z-index: 5;
+ }
+
+ #mobile-nav ul {
+   flex-direction: column;
+   align-items: center;
+ }
+
+ #mobile-nav li {
+   margin: 15px 0;
+ }
+
+ /* Social media icons in mobile view */
+ .mobile-social {
+   display: flex;
+   justify-content: center;
+   margin-top: 20px;
+   border-top: 1px solid #eee;
+   padding-top: 20px;
+ }
+
+ .mobile-social ul {
+   display: flex;
+   flex-direction: row;
+ }
+}
+
+/* Small mobile adjustments */
+@media (max-width: 480px) {
+ nav {
+   width: 95%;
+   padding: 12px 15px;
+ }
+
+ #logo {
+   font-size: 28px;
+ }
+
+ .hamburger {
+   width: 25px;
+   height: 18px;
+ }
 }

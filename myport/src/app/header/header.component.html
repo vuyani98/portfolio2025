@@ -1,31 +1,71 @@
-<nav>
+<nav [class.menu-open]="isMenuOpen">
   <div id="logo">
     Vuyani Ncube
   </div>
+
+  <!-- Hamburger Menu Button (visible only on mobile) -->
+  <div class="hamburger" (click)="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Desktop Navigation Links (hidden on mobile) -->
   <div id="links">
     <ul>
       <li>
-        <a href="">Projects</a>
+        <a href="#projects">Projects</a>
       </li>
       <li>
-        <a href="">Experience</a>
+        <a href="#experience">Experience</a>
       </li>
       <li>
-        <a href="">Skills</a>
+        <a href="#skillset">Skills</a>
       </li>
     </ul>
   </div>
+
+  <!-- Desktop Social Media Icons (hidden on mobile) -->
   <div id="social-media">
     <ul>
       <li>
-        <a href=""><img src="../../assets/images/icons8-github-50.png" height="25px" alt=""></a>
+        <a href=""><img src="../../assets/images/icons8-github-50.png" height="25px" alt="GitHub"></a>
       </li>
       <li>
-        <a href=""><img src="../../assets/images/icons8-linkedin-50.png" height="25px" alt=""></a>
+        <a href=""><img src="../../assets/images/icons8-linkedin-50.png" height="25px" alt="LinkedIn"></a>
       </li>
       <li>
-        <a href=""><img src="../../assets/images/icons8-x-50.png" height="25px" alt=""></a>
+        <a href=""><img src="../../assets/images/icons8-x-50.png" height="25px" alt="Twitter/X"></a>
       </li>
     </ul>
+  </div>
+
+  <!-- Mobile Navigation (shows when menu is open) -->
+  <div id="mobile-nav">
+    <ul>
+      <li>
+        <a href="#projects" (click)="closeMenu()">Projects</a>
+      </li>
+      <li>
+        <a href="#experience" (click)="closeMenu()">Experience</a>
+      </li>
+      <li>
+        <a href="#skillset" (click)="closeMenu()">Skills</a>
+      </li>
+    </ul>
+
+    <div class="mobile-social">
+      <ul>
+        <li>
+          <a href="" (click)="closeMenu()"><img src="../../assets/images/icons8-github-50.png" height="25px" alt="GitHub"></a>
+        </li>
+        <li>
+          <a href="" (click)="closeMenu()"><img src="../../assets/images/icons8-linkedin-50.png" height="25px" alt="LinkedIn"></a>
+        </li>
+        <li>
+          <a href="" (click)="closeMenu()"><img src="../../assets/images/icons8-x-50.png" height="25px" alt="Twitter/X"></a>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>

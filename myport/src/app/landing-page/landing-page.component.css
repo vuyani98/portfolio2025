@@ -116,7 +116,6 @@ a:any-link{
 
 
 @keyframes scroll{
-
   to{
     transform: translateX(-50%);
   }
@@ -197,28 +196,119 @@ a:any-link{
   margin-right: 15px;
 }
 
+/* Tablet Styles (768px to 1024px) */
+@media (max-width: 1024px) {
+  #hero-text {
+    width: 50%;
+  }
 
+  #hero-image {
+    height: 60vh;
+  }
+
+  #skillset-outer {
+    width: 85%;
+  }
+
+  .example-section {
+    width: 200px;
+  }
+
+  #experience-inner {
+    width: 90%;
+  }
+}
+
+/* Mobile Styles (up to 768px) */
 @media (max-width: 768px) {
-
-  #my-hero{
+  #my-hero {
     flex-direction: column;
     align-items: center;
+    margin-block: 30px;
   }
+
   #hero-text {
     width: 90%;
     margin-inline: auto;
+    order: 2; /* Move text below image on mobile */
+  }
+
+  #hero-image {
+    height: auto;
+    width: 90%;
+    margin-bottom: 30px;
+    order: 1; /* Move image above text on mobile */
+  }
+
+  #hero-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  #projects {
+    width: 95%;
+    margin-block: 30px;
   }
 
   .project {
-
     display: flex;
     flex-direction: column;
     width: 75vw;
     align-items: center;
+    margin-inline: 30px;
+  }
+
+  .project-image {
+    height: 150px;
+  }
+
+  #skillset {
+    padding-block: 50px;
+    padding-inline: 15px;
+  }
+
+  #skillset-outer {
+    width: 100%;
+  }
+
+  .skills-head, .skill {
+    flex-direction: column;
+  }
+
+  .skills-head {
+    margin-block: 20px;
+  }
+
+  .left {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  .example-section {
+    width: 80%;
+  }
+
+  #experience-inner {
+    flex-direction: column;
+    width: 95%;
+  }
+
+  .experience-card {
+    width: 90%;
+    margin-inline: auto;
+    margin-bottom: 40px;
+    border-right: none !important;
+    border-bottom: 1px solid black;
+    padding-bottom: 30px;
+  }
+
+  .experience-card:last-child {
+    border-bottom: none;
   }
 
   h3 {
-    font-size: 16px !important;
+    font-size: 18px !important;
     margin-block: 15px !important;
   }
 
@@ -227,8 +317,44 @@ a:any-link{
     margin-block: 15px !important;
   }
 
-  p{
-    font-size: 10px !important;
+  p {
+    font-size: 12px !important;
+  }
+}
+
+/* Small Mobile Styles (up to 480px) */
+@media (max-width: 480px) {
+  #hero-text-header {
+    font-size: 24px;
   }
 
+  #hero-text p {
+    font-size: 13px !important;
+    line-height: 20px;
+  }
+
+  .project-image {
+    height: 120px;
+  }
+
+  .project {
+    margin-inline: 15px;
+  }
+
+  .details.top {
+    flex-direction: column;
+  }
+
+  .details.top .title {
+    margin-left: 0;
+    margin-bottom: 5px;
+  }
+
+  .experience-card {
+    font-size: 11px;
+  }
+
+  #skwiggle-border {
+    transform: scale(0.9);
+  }
 }
