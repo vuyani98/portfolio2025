@@ -14,13 +14,13 @@
   <div id="links">
     <ul>
       <li>
-        <a href="#projects">Projects</a>
+        <div class="local-link" (click)="gotoElement('projects')">Projects</div>
       </li>
       <li>
-        <a href="#experience">Experience</a>
+        <div class="local-link" href="" (click)="gotoElement('experience')">Experience</div>
       </li>
       <li>
-        <a href="#skillset">Skills</a>
+        <div class="local-link" href="" (click)="gotoElement('skillset')">Skills</div>
       </li>
     </ul>
   </div>
@@ -29,13 +29,13 @@
   <div id="social-media">
     <ul>
       <li>
-        <a href=""><img src="../../assets/images/icons8-github-50.png" height="25px" alt="GitHub"></a>
+        <a href="https://github.com/vuyani98"><img src="../../assets/images/icons8-github-50.png" height="25px" alt="GitHub"></a>
       </li>
       <li>
-        <a href=""><img src="../../assets/images/icons8-linkedin-50.png" height="25px" alt="LinkedIn"></a>
+        <a href="https://www.linkedin.com/in/vuyani-ncube-1901b7147/"><img src="../../assets/images/icons8-linkedin-50.png" height="25px" alt="LinkedIn"></a>
       </li>
       <li>
-        <a href=""><img src="../../assets/images/icons8-x-50.png" height="25px" alt="Twitter/X"></a>
+        <a href="https://x.com/vyanincube"><img src="../../assets/images/icons8-x-50.png" height="25px" alt="Twitter/X"></a>
       </li>
     </ul>
   </div>
@@ -44,26 +44,26 @@
   <div id="mobile-nav">
     <ul>
       <li>
-        <a href="#projects" (click)="closeMenu()">Projects</a>
+        <div class="local-link" (click)="gotoElement('projects'); closeMenu()">Projects</div>
       </li>
       <li>
-        <a href="#experience" (click)="closeMenu()">Experience</a>
+        <div class="local-link" href="" (click)="gotoElement('experience'); closeMenu()">Experience</div>
       </li>
       <li>
-        <a href="#skillset" (click)="closeMenu()">Skills</a>
+        <div class="local-link" href="" (click)="gotoElement('skillset'); closeMenu()">Skills</div>
       </li>
     </ul>
 
     <div class="mobile-social">
       <ul>
         <li>
-          <a href="" (click)="closeMenu()"><img src="../../assets/images/icons8-github-50.png" height="25px" alt="GitHub"></a>
+          <a href="https://github.com/vuyani98" (click)="closeMenu()"><img src="../../assets/images/icons8-github-50.png" height="25px" alt="GitHub"></a>
         </li>
         <li>
-          <a href="" (click)="closeMenu()"><img src="../../assets/images/icons8-linkedin-50.png" height="25px" alt="LinkedIn"></a>
+          <a href="https://www.linkedin.com/in/vuyani-ncube-1901b7147/" (click)="closeMenu()"><img src="../../assets/images/icons8-linkedin-50.png" height="25px" alt="LinkedIn"></a>
         </li>
         <li>
-          <a href="" (click)="closeMenu()"><img src="../../assets/images/icons8-x-50.png" height="25px" alt="Twitter/X"></a>
+          <a href="https://x.com/vyanincube" (click)="closeMenu()"><img src="../../assets/images/icons8-x-50.png" height="25px" alt="Twitter/X"></a>
         </li>
       </ul>
     </div>

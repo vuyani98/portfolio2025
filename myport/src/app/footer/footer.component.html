@@ -1,1 +1,52 @@
-<p>footer works!</p>
+<footer>
+  <div class="footer-container">
+    <!-- Footer Logo & Tagline -->
+    <div class="footer-brand">
+      <div class="footer-logo">Vuyani Ncube</div>
+      <p class="tagline">Full-stack Web Developer</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li>
+          <div class="local-link" (click)="gotoElement('projects')">Projects</div>
+        </li>
+        <li>
+          <div class="local-link" href="" (click)="gotoElement('experience')">Experience</div>
+        </li>
+        <li>
+          <div class="local-link" href="" (click)="gotoElement('skillset')">Skills</div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-contact">
+      <h3>Contact</h3>
+      <ul>
+        <li><i class="email-icon"></i> <a href="mailto:your.email@example.com">nvuyani307&#64;gmail.com</a></li>
+        <li><i class="location-icon"></i> <span>Bulawayo, Zimbabwe</span></li>
+      </ul>
+    </div>
+
+    <!-- Social Media -->
+    <div class="footer-social">
+      <h3>Connect</h3>
+      <div class="social-icons">
+        <a href="https://github.com/vuyani98" aria-label="GitHub"><img src="../../assets/images/icons8-github-50.png" height="25px" alt="GitHub"></a>
+        <a href="https://www.linkedin.com/in/vuyani-ncube-1901b7147/" aria-label="LinkedIn"><img src="../../assets/images/icons8-linkedin-50.png" height="25px" alt="LinkedIn"></a>
+        <a href="https://x.com/vyanincube" aria-label="Twitter"><img src="../../assets/images/icons8-x-50.png" height="25px" alt="Twitter/X"></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Copyright Bar -->
+  <div class="copyright">
+    <p>&copy; {{currentYear}} Vuyani Ncube. All rights reserved.</p>
+    <div class="back-to-top">
+      <a href="#" (click)="scrollToTop($event)">Back to top</a>
+    </div>
+  </div>
+</footer>

@@ -21,6 +21,13 @@ export class HeaderComponent {
     }
   }
 
+  gotoElement(elementId: string): void {
+    const element = document.getElementById(elementId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
   closeMenu(): void {
     this.isMenuOpen = false;
     document.body.style.overflow = '';

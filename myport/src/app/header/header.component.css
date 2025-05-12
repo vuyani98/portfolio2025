@@ -27,7 +27,11 @@ li{
  margin-inline: 20px;
 }
 
-a:any-link{
+.local-link:hover{
+  cursor: pointer;
+}
+
+a:any-link, .local-link{
  color: black;
  text-decoration: none;
  font-family: 'Archivo';
